@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Aula sobre branchs</h1>
+    <h2>Branchs</h2>
+São ramificações do projeto, o qual permite vários desenvolvedores, trabalharem em diferentes funcionalidades, sem bugar a versão estável.
+
+  <h2>Principais branchs</h2>
+Branch main -> que é a branch principal, ou seja, a branch estável da aplicação. Versão que é disponibilizada aos clientes.
+
+Branch developer -> É a branch utilizada pelos testers. Os quais vão testar as novas funcionalidades, correções de bugs, etc.
+
+<h2>Outras branchs</h2>
+Para cada nova funcionalidade ou correção de bugs é criada uma nova branch.
+
+<h3>Padrôes para criar nomes de branchs</h3>
+<b>!IMPORTANTE!</b> Nomes de branchs não tem acentos nem Ç  
+Para correções de bugs: fix_identificacao_do_bug
+<br>Exemplo: fix_botao_de_login, fix_cor_do_cabecalho
+
+<h3>Para novas funcionalidades:</h3>
+feat_identificacao_da_nova_funcionalidade
+<br>Exemplo: feat_integracao_com_google, feat_nova_tela_de_contato
+
+<h3>Para atualizar documentação:</h3> chore_identificacao_da_alteracao
+<br>Exemplo: doc_adicionada_nova_imagem
+
+<h3>Para criação/alteração de tarefas que não interferem no código:</h3>
+chore_identificacao_da_modificacao
+<br>Exemplo: chore_atualizado_a_versao_do_banco
+
+<h2> Comandos para trabalhar com branchs</h2>
+<h3> Criação de novas branchs</h3>
+git checkout -b nome_da_nova_branch
+<br>Exemplo: git checkout -b fix_botao_da_tela_login
+<br>
+OBS: O ideal é sempre criar as branchs a partir da main
+
+<h3> Listar as branchs existentes</h3>
+git branch --list
+<h3> Trocar de branch</h3>
+git switch nome_da_branch_que_deseja_entrar
+<br>Exemplo 01: git switch fix_botao_da_tela_login
+<br>Exemplo 02: git switch main
+
+<h3>Excluir uma branch</h3>
+git branch -D nome_da_branch_que_deseja_excluir
+<br>Exemplo: git branch -D fix_botao_da_tela_login
+</body>
+</html>
